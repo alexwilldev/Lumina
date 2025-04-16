@@ -1,11 +1,11 @@
 {
-	"id": "sample-plugin",
-	"name": "Sample Plugin",
-	"version": "1.0.0",
+	"id": "lumina",
+	"name": "Lumina",
+	"version": "0.0.1",
 	"minAppVersion": "0.15.0",
-	"description": "Demonstrates some of the capabilities of the Obsidian API.",
-	"author": "Obsidian",
-	"authorUrl": "https://obsidian.md",
+	"description": "Chat with your notes using Ollama and LMStudio",
+	"author": "Alex Williams",
+	"authorUrl": "github.com/alexwilldev",
 	"fundingUrl": "https://obsidian.md/pricing",
 	"isDesktopOnly": false
 }
