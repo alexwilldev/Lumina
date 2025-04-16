@@ -10,7 +10,7 @@ const DEFAULT_SETTINGS: MyPluginSettings = {
 	mySetting: 'default'
 }
 
-export default class MyPlugin extends Plugin {
+export default class HelloWorldPlugin extends Plugin {
 	settings: MyPluginSettings;
 
 	async onload() {
@@ -19,14 +19,14 @@ export default class MyPlugin extends Plugin {
 		// This creates an icon in the left ribbon.
 		const ribbonIconEl = this.addRibbonIcon('dice', 'Sample Plugin', (evt: MouseEvent) => {
 			// Called when the user clicks the icon.
-			new Notice('This is a notice!');
+			new Notice('Hello world!');
 		});
 		// Perform additional things with the ribbon
 		ribbonIconEl.addClass('my-plugin-ribbon-class');
 
 		// This adds a status bar item to the bottom of the app. Does not work on mobile apps.
 		const statusBarItemEl = this.addStatusBarItem();
-		statusBarItemEl.setText('Status Bar Text');
+		statusBarItemEl.setText('Lumina');
 
 		// This adds a simple command that can be triggered anywhere
 		this.addCommand({
